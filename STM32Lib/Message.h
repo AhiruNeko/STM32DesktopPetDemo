@@ -14,6 +14,10 @@ public:
 
     bool contains(const string& key);
 
+    string encode() const;
+
+    void decode(const string& strMsg);
+
 private:
     unordered_map<string, any> msg;
 };
