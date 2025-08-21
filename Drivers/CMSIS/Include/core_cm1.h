@@ -1,6 +1,6 @@
 /**************************************************************************//**
  * @file     core_cm1.h
- * @brief    CMSIS Cortex-M1 Src Peripheral Access Layer Header File
+ * @brief    CMSIS Cortex-M1 Core Peripheral Access Layer Header File
  * @version  V1.0.0
  * @date     23. July 2018
  ******************************************************************************/
@@ -68,7 +68,7 @@
 #define __CM1_CMSIS_VERSION       ((__CM1_CMSIS_VERSION_MAIN << 16U) | \
                                     __CM1_CMSIS_VERSION_SUB           )  /*!< \deprecated CMSIS HAL version number */
 
-#define __CORTEX_M                (1U)                                   /*!< Cortex-M Src */
+#define __CORTEX_M                (1U)                                   /*!< Cortex-M Core */
 
 /** __FPU_USED indicates whether an FPU is used or not.
     This core does not support an FPU at all
@@ -175,11 +175,11 @@
 
 /*******************************************************************************
  *                 Register Abstraction
-  Src Register contain:
-  - Src Register
-  - Src NVIC Register
-  - Src SCB Register
-  - Src SysTick Register
+  Core Register contain:
+  - Core Register
+  - Core NVIC Register
+  - Core SCB Register
+  - Core SysTick Register
  ******************************************************************************/
 /**
   \defgroup CMSIS_core_register Defines and Type Definitions
@@ -189,7 +189,7 @@
 /**
   \ingroup    CMSIS_core_register
   \defgroup   CMSIS_CORE  Status and Control Registers
-  \brief      Src Register type definitions.
+  \brief      Core Register type definitions.
   @{
  */
 
@@ -515,8 +515,8 @@ typedef struct
 
 /**
   \ingroup  CMSIS_core_register
-  \defgroup CMSIS_CoreDebug       Src Debug Registers (CoreDebug)
-  \brief    Cortex-M1 Src Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor.
+  \defgroup CMSIS_CoreDebug       Core Debug Registers (CoreDebug)
+  \brief    Cortex-M1 Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible over DAP and not via processor.
             Therefore they are not covered by the Cortex-M1 header file.
   @{
  */
@@ -525,7 +525,7 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_bitfield     Src register bit field macros
+  \defgroup   CMSIS_core_bitfield     Core register bit field macros
   \brief      Macros for use with bit field definitions (xxx_Pos, xxx_Msk).
   @{
  */
@@ -551,12 +551,12 @@ typedef struct
 
 /**
   \ingroup    CMSIS_core_register
-  \defgroup   CMSIS_core_base     Src Definitions
+  \defgroup   CMSIS_core_base     Core Definitions
   \brief      Definitions for base addresses, unions, and structures.
   @{
  */
 
-/* Memory mapping of Src Hardware */
+/* Memory mapping of Core Hardware */
 #define SCS_BASE            (0xE000E000UL)                            /*!< System Control Space Base Address */
 #define SysTick_BASE        (SCS_BASE +  0x0010UL)                    /*!< SysTick Base Address */
 #define NVIC_BASE           (SCS_BASE +  0x0100UL)                    /*!< NVIC Base Address */
@@ -574,10 +574,10 @@ typedef struct
 
 /*******************************************************************************
  *                Hardware Abstraction Layer
-  Src Function Interface contains:
-  - Src NVIC Functions
-  - Src SysTick Functions
-  - Src Register Access Functions
+  Core Function Interface contains:
+  - Core NVIC Functions
+  - Core SysTick Functions
+  - Core Register Access Functions
  ******************************************************************************/
 /**
   \defgroup CMSIS_Core_FunctionInterface Functions and Instructions Reference

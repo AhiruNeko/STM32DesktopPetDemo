@@ -101,9 +101,9 @@
   #define __RESTRICT                             __restrict
 #endif
 
-/* ###########################  Src Function Access  ########################### */
+/* ###########################  Core Function Access  ########################### */
 /** \ingroup  CMSIS_Core_FunctionInterface
-    \defgroup CMSIS_Core_RegAccFunctions CMSIS Src Register Access Functions
+    \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
   @{
  */
 
@@ -374,8 +374,8 @@ __STATIC_INLINE void __set_FPSCR(uint32_t fpscr)
 /*@} end of CMSIS_Core_RegAccFunctions */
 
 
-/* ##########################  Src Instruction Access  ######################### */
-/** \defgroup CMSIS_Core_InstructionInterface CMSIS Src Instruction Interface
+/* ##########################  Core Instruction Access  ######################### */
+/** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
   Access to dedicated instructions
   @{
 */

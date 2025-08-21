@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "../../STM32Lib/MessageC.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,6 +99,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    MessageHandle msg = Message_create();
+    Message_add_key(msg, "test1");
+    Message_add_key(msg, "test2");
+    Message_add_key(msg, "test3");
+    Message_initialized(msg);
+
+    Message_set(msg, "test1", 3.1415926535f);
+    Message_send(msg, &huart1);
+    Message_destroy(msg);
+    HAL_Delay(100);
+    //HAL_UART_Transmit(&huart1, "hello", 5, 1000);
   }
   /* USER CODE END 3 */
 }

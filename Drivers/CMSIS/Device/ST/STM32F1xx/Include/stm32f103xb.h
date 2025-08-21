@@ -44,9 +44,9 @@
   * @{
   */
 /**
-  * @brief Configuration of the Cortex-M3 Processor and Src Peripherals
+  * @brief Configuration of the Cortex-M3 Processor and Core Peripherals 
  */
-#define __CM3_REV                  0x0200U  /*!< Src Revision r2p0                           */
+#define __CM3_REV                  0x0200U  /*!< Core Revision r2p0                           */
  #define __MPU_PRESENT             0U       /*!< Other STM32 devices does not provide an MPU  */
 #define __NVIC_PRIO_BITS           4U       /*!< STM32 uses 4 Bits for the Priority Levels    */
 #define __Vendor_SysTickConfig     0U       /*!< Set to 1 if different SysTick Config is used */
@@ -9649,10 +9649,10 @@ typedef struct
 
 #define DBGMCU_CR_DBG_IWDG_STOP_Pos         (8U)                               
 #define DBGMCU_CR_DBG_IWDG_STOP_Msk         (0x1UL << DBGMCU_CR_DBG_IWDG_STOP_Pos) /*!< 0x00000100 */
-#define DBGMCU_CR_DBG_IWDG_STOP             DBGMCU_CR_DBG_IWDG_STOP_Msk        /*!< Debug Independent Watchdog stopped when Src is halted */
+#define DBGMCU_CR_DBG_IWDG_STOP             DBGMCU_CR_DBG_IWDG_STOP_Msk        /*!< Debug Independent Watchdog stopped when Core is halted */
 #define DBGMCU_CR_DBG_WWDG_STOP_Pos         (9U)                               
 #define DBGMCU_CR_DBG_WWDG_STOP_Msk         (0x1UL << DBGMCU_CR_DBG_WWDG_STOP_Pos) /*!< 0x00000200 */
-#define DBGMCU_CR_DBG_WWDG_STOP             DBGMCU_CR_DBG_WWDG_STOP_Msk        /*!< Debug Window Watchdog stopped when Src is halted */
+#define DBGMCU_CR_DBG_WWDG_STOP             DBGMCU_CR_DBG_WWDG_STOP_Msk        /*!< Debug Window Watchdog stopped when Core is halted */
 #define DBGMCU_CR_DBG_TIM1_STOP_Pos         (10U)                              
 #define DBGMCU_CR_DBG_TIM1_STOP_Msk         (0x1UL << DBGMCU_CR_DBG_TIM1_STOP_Pos) /*!< 0x00000400 */
 #define DBGMCU_CR_DBG_TIM1_STOP             DBGMCU_CR_DBG_TIM1_STOP_Msk        /*!< TIM1 counter stopped when core is halted */
@@ -9667,13 +9667,13 @@ typedef struct
 #define DBGMCU_CR_DBG_TIM4_STOP             DBGMCU_CR_DBG_TIM4_STOP_Msk        /*!< TIM4 counter stopped when core is halted */
 #define DBGMCU_CR_DBG_CAN1_STOP_Pos         (14U)                              
 #define DBGMCU_CR_DBG_CAN1_STOP_Msk         (0x1UL << DBGMCU_CR_DBG_CAN1_STOP_Pos) /*!< 0x00004000 */
-#define DBGMCU_CR_DBG_CAN1_STOP             DBGMCU_CR_DBG_CAN1_STOP_Msk        /*!< Debug CAN1 stopped when Src is halted */
+#define DBGMCU_CR_DBG_CAN1_STOP             DBGMCU_CR_DBG_CAN1_STOP_Msk        /*!< Debug CAN1 stopped when Core is halted */
 #define DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT_Pos (15U)                             
 #define DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT_Msk (0x1UL << DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT_Pos) /*!< 0x00008000 */
-#define DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT    DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT_Msk /*!< SMBUS timeout mode stopped when Src is halted */
+#define DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT    DBGMCU_CR_DBG_I2C1_SMBUS_TIMEOUT_Msk /*!< SMBUS timeout mode stopped when Core is halted */
 #define DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT_Pos (16U)                             
 #define DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT_Msk (0x1UL << DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT_Pos) /*!< 0x00010000 */
-#define DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT    DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT_Msk /*!< SMBUS timeout mode stopped when Src is halted */
+#define DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT    DBGMCU_CR_DBG_I2C2_SMBUS_TIMEOUT_Msk /*!< SMBUS timeout mode stopped when Core is halted */
 
 /******************************************************************************/
 /*                                                                            */

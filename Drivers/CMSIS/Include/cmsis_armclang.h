@@ -112,9 +112,9 @@
 #endif
 
 
-/* ###########################  Src Function Access  ########################### */
+/* ###########################  Core Function Access  ########################### */
 /** \ingroup  CMSIS_Core_FunctionInterface
-    \defgroup CMSIS_Core_RegAccFunctions CMSIS Src Register Access Functions
+    \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
   @{
  */
 
@@ -770,8 +770,8 @@ __STATIC_FORCEINLINE void __TZ_set_MSPLIM_NS(uint32_t MainStackPtrLimit)
 /*@} end of CMSIS_Core_RegAccFunctions */
 
 
-/* ##########################  Src Instruction Access  ######################### */
-/** \defgroup CMSIS_Core_InstructionInterface CMSIS Src Instruction Interface
+/* ##########################  Core Instruction Access  ######################### */
+/** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
   Access to dedicated instructions
   @{
 */
